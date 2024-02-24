@@ -11,4 +11,9 @@ public class EmployeeServiceImpl implements EmployeeService {
         System.out.println("Employee Details - " + employee.toString());
         return employee;
     }
+
+    @Override
+    public boolean isEmployeeIdExist(Employee employee) {
+        return (employee.getEmployeeId() != null) ? true : false;
+    }
 }

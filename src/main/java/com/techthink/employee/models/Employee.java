@@ -2,6 +2,7 @@ package com.techthink.employee.models;
 
 public class Employee {
 
+    private Long employeeId;
     private String firstName;
     private String middleName;
     private String lastName;
@@ -23,6 +24,26 @@ public class Employee {
         this.uanNo = uanNo;
         this.mobileNo = mobileNo;
         this.personalEmailAddress = personalEmailAddress;
+    }
+
+    public Employee(Long employeeId, String firstName, String middleName, String lastName, String panNo, Long aadharNo, String uanNo, Long mobileNo, String personalEmailAddress) {
+        this.employeeId = employeeId;
+        this.firstName = firstName;
+        this.middleName = middleName;
+        this.lastName = lastName;
+        this.panNo = panNo;
+        this.aadharNo = aadharNo;
+        this.uanNo = uanNo;
+        this.mobileNo = mobileNo;
+        this.personalEmailAddress = personalEmailAddress;
+    }
+
+    public Long getEmployeeId() {
+        return employeeId;
+    }
+
+    public void setEmployeeId(Long employeeId) {
+        this.employeeId = employeeId;
     }
 
     public String getFirstName() {
